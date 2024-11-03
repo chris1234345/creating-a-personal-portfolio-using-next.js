@@ -9,6 +9,11 @@ import StarIcon from '@/assets/icons/star.svg';
 export const HeroSection = () => {
   return (
     <div className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
+      <div className='absolute inset-0'
+      style={{maskImage: "linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))"}}
+      >
+
+     
       <div className='absolute inset-0 -z-30 opacity-5' style={{backgroundImage:`url(${grainImage.src})`}}>
 
       </div>
@@ -19,6 +24,7 @@ export const HeroSection = () => {
     <HeroOrbit size={800} rotation={-72}>
        <StarIcon className="size-28 text-emerald-300" />
      </HeroOrbit>  
+      </div>
 
       <div className="container">
         <div className='flex flex-col items-center'>
